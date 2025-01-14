@@ -28,3 +28,5 @@ retell-sdk==4.6.0
 fastapi==0.100.1
 uvicorn==0.21.1
 python-multipart==0.0.9
+websocket-client==1.7.0
+rel==0.4.9.5
