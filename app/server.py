@@ -8,6 +8,11 @@ from concurrent.futures import TimeoutError as ConnectionTimeoutError
 from retell import Retell
 from .custom_types import ( ConfigResponse, ResponseRequiredRequest)
 from .customer_llm import LlmClient  # or use .llm_with_func_calling
+# import debugpy
+
+# # Allow debugger to attach to the app
+# debugpy.listen(("0.0.0.0", 5678))  # Replace with a port of your choice
+# print("Debugger is active. Waiting for debugger to attach...")
 
 load_dotenv(override=True)
 app = FastAPI()

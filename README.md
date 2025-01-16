@@ -40,3 +40,11 @@ The custom LLM URL would look like
 
 To run in prod, you probably want to customize your LLM solution, host the code
 in a cloud, and use that IP to create agent.
+
+## Adnan Additional Steps
+
+4. Start the qdrant database
+
+```bash
+docker run -p 6333:6333 qdrant/qdrant
+```
