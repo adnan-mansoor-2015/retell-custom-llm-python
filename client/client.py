@@ -11,9 +11,13 @@ response_id = 0
 def on_message(ws, message):
     global response_id
     response = json.loads(message)
+    # print(response)
+
+    if "content" not in response:
+        return
 
     if response_id in response:
-        response_id = response["content"]["response_id"]
+        response_id = response["response_id"]
 
     if "content" in response:
         print("GPT: " +  response["content"] + "\n")    
